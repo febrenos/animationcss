@@ -1,5 +1,6 @@
-# animationcss
-Who you can do an animation? here you can learn
+# Animation
+here you can see exercise for understend
 
 # Study
-is about the css struturation for you learn
+Who you can do an animation? 
+This is about the css struturation for you learn
