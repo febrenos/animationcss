@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #e0f7fa;
+        }
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        .container .card{
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .card .content{
+            position: absolute;
+            bottom: -160px;
+            width: 100%;
+            height: 160px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            flex-direction: column;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: bottom 0.5s;
+            transition-delay: 0.8s;
+        }
+        .container .card:hover .content{
+            bottom: 0px;
+            transition-delay: 0s;
+        }
+        .container .card .content .contentBox h3{
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 0 15px;
+            line-height: 1.1em;
+            transition: 0.5s;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition-delay: 0.6s;
+        }
+        .container .card:hover .content .contentBox h3{
+            opacity: 1;
+            transform: translate(0px);
+        }
+        .container .card .content .contentBox h3 span{
+            font-size: 12px;
+            font-weight: 300;
+            text-transform:initial
+        }
+        .container .card .content .i{
+            position: relative;
+            bottom: 10px;
+            display: flex;
+        }
+        .conatiner .card .conatent .i li{
+            list-style: none;
+            margin: 0 10px;
+            transform: translateY(40px);
+            transition: 0.5s;
+            opacity: 0;
+            transition-delay: calc(0.2s * var(--i));
+        }
+        .container .card:hover .content .i li{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        .container .card .content .i li a{
+            color: #fff;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- box1 -->
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="./1.jpg">
+                </div>
+                <div class="content">
+                    <div class="contentBox">
+                        <h3>Tittle Event<br><span>Background Focus</span></h3>
+                    </div>
+                </div>
+                <ul class="i">
+                    <li style="--i:1;"><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                    <li style="--i:2;"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li style="--i:3;"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- box2 -->
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="./1.jpg">
+                </div>
+                <div class="content">
+                    <div class="contentBox">
+                        <h3>Tittle Event<br><span>New Design</span></h3>
+                    </div>
+                </div>
+                <ul class="i">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- box3 -->
+    <section>
+        <div class="container">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="./1.jpg">
+                </div>
+                <div class="content">
+                    <div class="contentBox">
+                        <h3>Tittle Event<br><span>New Design</span></h3>
+                    </div>
+                </div>
+                <ul class="i">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/af0a3d748f.js" crossorigin="anonymous"></script>
+</body>
+</html>
